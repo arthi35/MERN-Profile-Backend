@@ -8,9 +8,9 @@ const cookiParser = require("cookie-parser")
 const port = process.env.port||4000;
 
 
-// app.get("/",(req,res)=>{
-//     res.status(201).json("server created")
-// });
+app.get("/",(req,res)=>{
+    res.json("server created")
+});
 
 app.use(express.json());
 app.use(cookiParser());
